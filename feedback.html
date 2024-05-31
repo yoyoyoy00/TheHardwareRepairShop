@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<nav>
+  <a href="index.html" class="brand-button">The Hardware Repair Shop</a>
+  <div class="navbarcolor">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a>About</a>
+        <ul>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li>
+        <a>Services</a>
+        <ul>
+          <li><a href="computer-repair.html">Computer Repair</a></li>
+          <li><a href="data-recovery.html">Data Recovery</a></li>
+          <li><a href="PcBuilding.html">Custom PC Building</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="Search...">
+      <button id="searchButton" type="button">Go</button>
+    </div>
+  </div>
+</nav>
+
+
+<body>
+<div class="notworking">
+<h1>This page is not working</h1>
+<p>We are working on this page. </p>
+<p>Do not try to send feed back on this page.</p>
+<p>To send feedback send a email to TheHardwareRepairShop@hotmail.com.</p>
+</div>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="feedback-type">Feedback Type:</label>
+            <select id="feedback-type" name="feedback-type">
+                <option value="suggestion">Suggestion</option>
+                <option value="bug">Bug Report</option>
+                <option value="general">General Feedback</option>
+            </select>
+            
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 The Hardware Repair Shop. All rights reserved.</p>
+        <p>Please keep in mind that this is my first business.</p>
+        <ul>
+          <li><a href="directory.html">Troubleshooting</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="search.js"></script>
+    <script src="NotWorking.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Configuration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #advanced-options {
+            display: none;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.component {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+#review-section {
+    display: none;
+    margin-top: 20px;
+}
+
+#order-summary {
+    white-space: pre-wrap;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4caf50;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+
+
+    </style>
+
+    </head>
+<body>
+
+    <nav>
+        <a href="index.html" class="brand-button">The Hardware Repair Shop</a>
+        <div class="navbarcolor">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>About</a>
+              <ul>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>Services</a>
+              <ul>
+                <li><a href="computer-repair.html">Computer Repair</a></li>
+                <li><a href="data-recovery.html">Data Recovery</a></li>
+                <li><a href="PcBuilding.html">Custom PC Building</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Search...">
+            <button id="searchButton" type="button">Go</button>
+          </div>
+        </div>
+      </nav>
+      <div class="notworking">
+        <h1>This page is not working</h1>
+        <p>We are working on this page. </p>
+        <p>you can try to send order on this page. But it may not work.</p>
+        </div>
+    
+    <h1>Configure Your PC</h1>
+            <form id="pc-config-form">
+                <h2>CPU</h2>
+                <div class="component">
+                    <label><p>Intel</p></label>
+                    
+                        <label><input type="radio" name="cpu" value="Core i7-920"> Core i7-920 (2008)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i5-2500K"> Core i5-2500K (2011)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-3770K"> Core i7-3770K (2012)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-4770K"> Core i7-4770K (2013)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-5775C"> Core i7-5775C (2014)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-6700K"> Core i7-6700K (2015)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-7700K"> Core i7-7700K (2016)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i9-9900K"> Core i9-9900K (2017)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i3-8121U"> Core i3-8121U (2018)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-1065G7"> Core i7-1065G7 (2019)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i9-10900K"> Core i9-10900K (2020)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i7-1165G7"> Core i7-1165G7 (2020)</label><br>
+                        <label><input type="radio" name="cpu" value="Core i9-12900K"> Core i9-12900K (2021)</label><br>
+                        
+                        
+                    
+                </div>
+                <div class="component">
+                    <label><p>AMD</p></label>
+                    
+                        <label><input type="radio" name="cpu" value="Ryzen 3"> Ryzen 3 ($100 - $150)</label><br>
+                        <label><input type="radio" name="cpu" value="Ryzen 5"> Ryzen 5 ($150 - $250)</label><br>
+                        <label><input type="radio" name="cpu" value="Ryzen 7"> Ryzen 7 ($250 - $400)</label><br>
+                        <label><input type="radio" name="cpu" value="Ryzen 9"> Ryzen 9 ($400 - $700)</label><br>
+                        <label><input type="radio" name="cpu" value="Threadripper"> Threadripper ($1000 - $4000)</label>
+                    
+                </div>
+        
+
+
+        
+
+        <h2>GPU</h2>
+        <div class="component">
+            <label>Nvidia</label>
+            <div class="dropdown">
+                <label><input type="radio" name="gpu" value="GTX 1650"> GTX 1650 ($150 - $200)</label><br>
+                <label><input type="radio" name="gpu" value="RTX 2060"> RTX 2060 ($300 - $400)</label><br>
+                <label><input type="radio" name="gpu" value="RTX 3060"> RTX 3060 ($400 - $500)</label><br>
+                <label><input type="radio" name="gpu" value="RTX 3070"> RTX 3070 ($500 - $700)</label><br>
+                <label><input type="radio" name="gpu" value="RTX 3080"> RTX 3080 ($700 - $1000)</label><br>
+                <label><input type="radio" name="gpu" value="RTX 3090"> RTX 3090 ($1500 - $2000)</label>
+            </div>
+        </div>
+        <div class="component">
+            <label>AMD</label>
+            <div class="dropdown">
+                <label><input type="radio" name="gpu" value="RX 5500 XT"> RX 5500 XT ($150 - $200)</label><br>
+                <label><input type="radio" name="gpu" value="RX 5600 XT"> RX 5600 XT ($200 - $300)</label><br>
+                <label><input type="radio" name="gpu" value="RX 5700 XT"> RX 5700 XT ($300 - $400)</label><br>
+                <label><input type="radio" name="gpu" value="RX 6700 XT"> RX 6700 XT ($400 - $500)</label><br>
+                <label><input type="radio" name="gpu" value="RX 6800"> RX 6800 ($600 - $800)</label><br>
+                <label><input type="radio" name="gpu" value="RX 6900 XT"> RX 6900 XT ($1000 - $1500)</label>
+            </div>
+        </div>
+
+        <h2>RAM</h2>
+        <label><input type="radio" name="ram" value="4 GB"> 4 GB ($20 - $40)</label><br>
+        <label><input type="radio" name="ram" value="8 GB"> 8 GB ($40 - $80)</label><br>
+        <label><input type="radio" name="ram" value="16 GB"> 16 GB ($80 - $150)</label><br>
+        <label><input type="radio" name="ram" value="32 GB"> 32 GB ($150 - $300)</label><br>
+        <label><input type="radio" name="ram" value="64 GB"> 64 GB ($300 - $600)</label><br>
+        <label><input type="radio" name="ram" value="128 GB"> 128 GB ($600 - $1200)</label><br>
+        <label><input type="radio" name="ram" value="256 GB"> 256 GB ($1200 - $2500)</label>
+
+        <h2>Storage</h2>
+        <label><input type="radio" name="storage" value="120 GB"> 120 GB ($20 - $40)</label><br>
+        <label><input type="radio" name="storage" value="250 GB"> 250 GB ($40 - $60)</label><br>
+        <label><input type="radio" name="storage" value="500 GB"> 500 GB ($60 - $100)</label><br>
+        <label><input type="radio" name="storage" value="1 TB"> 1 TB ($100 - $200)</label>
+
+        <h2>Extra Storage</h2>
+        <h3>HDD</h3>
+        <label><input type="radio" name="extra-storage" value="HDD 1 TB"> 1 TB ($50 - $100)</label><br>
+        <label><input type="radio" name="extra-storage" value="HDD 2 TB"> 2 TB ($80 - $150)</label><br>
+        <label><input type="radio" name="extra-storage" value="HDD 4 TB"> 4 TB ($150 - $250)</label><br>
+        <label><input type="radio" name="extra-storage" value="HDD 5 TB"> 5 TB ($200 - $300)</label><br>
+        <label><input type="radio" name="extra-storage" value="HDD 8 TB"> 8 TB ($300 - $400)</label><br>
+        <label><input type="radio" name="extra-storage" value="HDD 10 TB"> 10 TB ($400 - $500)</label>
+
+        <h3>SSD</h3>
+        <label><input type="radio" name="extra-storage" value="SSD 250 GB"> 250 GB ($50 - $100)</label><br>
+        <label><input type="radio" name="extra-storage" value="SSD 500 GB"> 500 GB ($100 - $150)</label><br>
+        <label><input type="radio" name="extra-storage" value="SSD 1 TB"> 1 TB ($150 - $250)</label><br>
+        <label><input type="radio" name="extra-storage" value="SSD 2 TB"> 2 TB ($250 - $400)</label>
+
+        <h2>Cooling</h2>
+        <label><input type="radio" name="cooling" value="Air Cooler"> Air Coolers ($20 - $100)</label><br>
+        <label><input type="radio" name="cooling" value="Liquid Cooler (AIO)"> Liquid Coolers (AIO) ($60 - $200)</label><br>
+        <label><input type="radio" name="cooling" value="Custom Water Cooling Kit"> Custom Water Cooling Kits ($200 - $500)</label>
+
+        <h2>Accessories</h2>
+        <label><input type="checkbox" name="accessories" value="RGB case"> RGB case ($50 - $200)</label><br>
+        <label><input type="checkbox" name="accessories" value="RGB case fans"> RGB case fans ($20 - $50 each)</label><br>
+        <label><input type="checkbox" name="accessories" value="RGB CPU cooler"> RGB CPU cooler ($50 - $150)</label><br>
+        <label><input type="checkbox" name="accessories" value="RGB RAM"> RGB RAM ($100 - $300)</label><br>
+  
+          <button type="button" onclick="toggleAdvancedOptions()">Advanced</button>
+          <div id="advanced-options">
+              <h2>Power Supply Units (PSUs)</h2>
+              <label><input type="radio" name="psu" value="450W"> 450W ($40 - $60)</label><br>
+              <label><input type="radio" name="psu" value="550W"> 550W ($50 - $80)</label><br>
+              <label><input type="radio" name="psu" value="650W"> 650W ($80 - $120)</label><br>
+              <label><input type="radio" name="psu" value="750W"> 750W ($100 - $150)</label><br>
+              <label><input type="radio" name="psu" value="850W"> 850W ($120 - $200)</label><br>
+              <label><input type="radio" name="psu" value="1000W"> 1000W ($150 - $250)</label><br>
+              <label><input type="radio" name="psu" value="1200W"> 1200W ($200 - $350)</label>
+  
+              <h2>Motherboards</h2>
+              <h3>Intel</h3>
+              <label><input type="radio" name="motherboard" value="LGA 1200"> LGA 1200 ($100 - $300)</label><br>
+              <label><input type="radio" name="motherboard" value="LGA 1700"> LGA 1700 ($200 - $500)</label><br>
+              <label><input type="radio" name="motherboard" value="LGA 2066"> LGA 2066 ($250 - $600)</label>
+  
+              <h3>AMD</h3>
+              <label><input type="radio" name="motherboard" value="AM4"> AM4 ($100 - $300)</label><br>
+              <label><input type="radio" name="motherboard" value="AM5"> AM5 ($200 - $400)</label><br>
+              <label><input type="radio" name="motherboard" value="TR4"> TR4 ($300 - $500)</label>
+          </div>
+  
+          <button type="button" onclick="reviewOrder()">Review Order</button>
+      </form>
+  
+      <div id="review-section" style="display:none;">
+          <h2>Review Your Order</h2>
+          <pre id="order-summary"></pre>
+          <h3>Enter Your Details</h3>
+          <form id="order-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" required><br>
+              <button type="button" onclick="submitOrder()">Submit Order</button>
+          </form>
+      </div>
+  
+      <script>
+          function toggleAdvancedOptions() {
+              var advOptions = document.getElementById('advanced-options');
+              advOptions.style.display = advOptions.style.display === 'none' ? 'block' : 'none';
+          }
+  
+          function reviewOrder() {
+              var formData = new FormData(document.getElementById('pc-config-form'));
+              var orderSummary = '';
+  
+              for (var [key, value] of formData.entries()) {
+                  orderSummary += key + ': ' + value + '\n';
+              }
+  
+              document.getElementById('order-summary').textContent = orderSummary;
+              document.getElementById('review-section').style.display = 'block';
+              document.getElementById('pc-config-form').style.display = 'none';
+          }
+  
+          function submitOrder() {
+              var orderData = new FormData(document.getElementById('order-form'));
+              var formData = new FormData(document.getElementById('pc-config-form'));
+  
+              for (var [key, value] of formData.entries()) {
+                  orderData.append(key, value);
+              }
+  
+              var orderDetails = '';
+              for (var [key, value] of orderData.entries()) {
+                  orderDetails += key + ': ' + value + '\n';
+              }
+  
+              var email = orderData.get('email');
+              var name = orderData.get('name');
+              var phone = orderData.get('phone');
+  
+              var mailtoLink = 'mailto:TheHardwareRepairShop@hotmail.com'
+                  + '?subject=' + encodeURIComponent('New PC Order from ' + name)
+                  + '&body=' + encodeURIComponent('Order Details:\n' + orderDetails + '\n\nContact Information:\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone);
+  
+              window.location.href = mailtoLink;
+          }
+          
+      </script>
+      <footer>
+        <div class="container">
+          <p>&copy; 2024 The Hardware Repair Shop. All rights reserved.</p>
+          <p>Please keep in mind that this is my first business.</p>
+          <ul>
+            <li><a href="directory.html">Troubleshooting</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </footer>
+      <script src="search.js"></script>
+  </body>
+  </html>
+  
